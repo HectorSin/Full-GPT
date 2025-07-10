@@ -1,21 +1,23 @@
 import streamlit as st
-from datetime import datetime
 
-today = datetime.today().strftime("%H:%M:%S")
+st.set_page_config(
+    page_title="FullstackGPT Home",
+    page_icon="🤖",
+)
 
-st.write(today)
-
-model = st.select_slider("Select a number",options=[1,2,3,4,5,6,7,8,9,10])
-
-st.write(model)
-
-name = st.text_input("Enter your name")
-
-st.write(name)
-
-
-
-
-
-
-    
+st.markdown(
+    """
+# Hello!
+            
+Welcome to my FullstackGPT Portfolio!
+            
+Here are the apps I made:
+            
+- [ ] [DocumentGPT](/DocumentGPT)
+- [ ] [PrivateGPT](/PrivateGPT)
+- [ ] [QuizGPT](/QuizGPT)
+- [ ] [SiteGPT](/SiteGPT)
+- [ ] [MeetingGPT](/MeetingGPT)
+- [ ] [InvestorGPT](/InvestorGPT)
+"""
+)
